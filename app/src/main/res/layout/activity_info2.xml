@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sidestyle">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtInfo2Dog"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bottomedge"
+            android:gravity="center"
+            android:text="반려동물 관련 정보"
+            android:textColor="#EF8B47"
+            android:textSize="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnInfo2Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/backstyle"
+            android:text="돌아가기"
+            app:layout_constraintLeft_toRightOf="@id/txtInfo2Dog"
+            app:layout_constraintTop_toTopOf="@id/txtInfo2Dog" />
+
+        <Button
+            android:id="@+id/txtInfo2ChoiceDog"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="개"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2Dog"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/backstyle"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/txtInfo2ChoiceCat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="고양이"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2Dog"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginRight="70dp"
+            android:textColor="#000000"
+            android:background="@drawable/backstyle"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/txtInfo2ChoiceDogHealth"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="건강"
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2ChoiceDog"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#000000"
+            android:background="@drawable/backstyle"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/txtInfo2ChoiceDogFood"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="음식"
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2ChoiceDog"
+            app:layout_constraintLeft_toRightOf="@id/txtInfo2ChoiceDogHealth"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#000000"
+            android:background="@drawable/backstyle"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/txtInfo2ChoiceDogProduct"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="제품"
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2ChoiceDog"
+            app:layout_constraintLeft_toRightOf="@id/txtInfo2ChoiceDogFood"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#000000"
+            android:background="@drawable/backstyle"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/txtInfo2ChoiceDogBehavior"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="행동"
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2ChoiceDog"
+            app:layout_constraintLeft_toRightOf="@id/txtInfo2ChoiceDogProduct"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#000000"
+            android:background="@drawable/backstyle"
+            android:gravity="center"/>
+
+            <ImageButton
+            android:id="@+id/imgInfo2Img1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2ChoiceDogHealth"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh1"/>
+
+        <TextView
+            android:id="@+id/txtInfo2Img1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="예방접종 순서 및 필수 종류"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img1"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img1"/>
+
+        <ImageButton
+            android:id="@+id/imgInfo2Img2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toRightOf="@id/imgInfo2Img1"
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2ChoiceDogHealth"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh2"/>
+
+        <TextView
+            android:id="@+id/txtInfo2Img2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="발톱 자르는 방법 및 필수 상식 5가지"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img2"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img2"/>
+
+        <ImageButton
+            android:id="@+id/imgInfo2Img3"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toRightOf="@id/imgInfo2Img2"
+            app:layout_constraintTop_toBottomOf="@id/txtInfo2ChoiceDogHealth"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh3"/>
+
+        <TextView
+            android:id="@+id/txtInfo2Img3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="입양 첫 날 해야할 10가지"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img3"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img3"/>
+
+        <ImageButton
+            android:id="@+id/imgInfo2Img4"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img1"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh4"/>
+
+        <TextView
+            android:id="@+id/txtInfo2Img4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="털갈이 시기 관리법"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img4"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img4"/>
+
+        <ImageButton
+            android:id="@+id/imgInfo2Img5"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toRightOf="@id/imgInfo2Img4"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img1"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh5"/>
+
+        <TextView
+            android:id="@+id/txtInfo2Img5"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="강아지 처음 키울 때 7가지 원칙"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img5"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img5"/>
+
+        <ImageButton
+            android:id="@+id/imgInfo2Img6"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="68dp"
+
+            app:layout_constraintLeft_toRightOf="@id/imgInfo2Img5"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img1"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh6" />
+
+        <TextView
+            android:id="@+id/txtInfo2Img6"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="강아지 간식 고르는 법 6가지"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img6"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img6"/>
+
+        <ImageButton
+            android:id="@+id/imgInfo2Img7"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh7"/>
+
+        <TextView
+            android:id="@+id/txtInfo2Img7"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="반려견이 아플 때 보이는 행동 6가지"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img7"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img7"/>
+
+
+        <ImageButton
+            android:id="@+id/imgInfo2Img8"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toRightOf="@id/imgInfo2Img7"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh8"/>
+
+        <TextView
+            android:id="@+id/txtInfo2Img8"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="강아지 음식 줄 때 피해야 할 6가지"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img8"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img8"/>
+
+
+        <ImageButton
+            android:id="@+id/imgInfo2Img9"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toRightOf="@id/imgInfo2Img8"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            app:srcCompat="@drawable/dh9"/>
+
+         <TextView
+             android:id="@+id/check"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="개"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintTop_toBottomOf="parent"
+             android:visibility="invisible"/>
+
+
+        <TextView
+            android:id="@+id/txtInfo2Img9"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="중성화 수술 전후 유의사항"
+            android:gravity="center"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/imgInfo2Img9"
+            app:layout_constraintLeft_toLeftOf="@id/imgInfo2Img9"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

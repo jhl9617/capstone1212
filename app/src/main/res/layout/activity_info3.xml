@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sidestyle">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtInfo3Main"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bottomedge"
+            android:gravity="center"
+            android:text="유기동물 관련 영상"
+            android:textColor="#EF8B47"
+            android:textSize="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnInfo3Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/backstyle"
+            android:text="돌아가기"
+            app:layout_constraintLeft_toRightOf="@id/txtInfo3Main"
+            app:layout_constraintTop_toTopOf="@id/txtInfo3Main" />
+
+            <ImageButton
+                android:id="@+id/imgInfo3Img1"
+                android:layout_width="387dp"
+                android:layout_height="249dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtInfo3Main"
+                app:srcCompat="@drawable/im1" />
+
+            <TextView
+                android:id="@+id/txtInfo3Txt1"
+                android:layout_height="70dp"
+                android:layout_width="350dp"
+                android:text="매일 평균 372마리가 유기되고 있는 상황 유기견 보호소 직원의 탄식"
+                app:layout_constraintTop_toBottomOf="@id/imgInfo3Img1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backstyle"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageButton
+                android:id="@+id/imgInfo3Img2"
+                android:layout_width="387dp"
+                android:layout_height="249dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtInfo3Txt1"
+                app:srcCompat="@drawable/im2" />
+
+            <TextView
+                android:id="@+id/txtInfo3Txt2"
+                android:layout_height="70dp"
+                android:layout_width="350dp"
+                android:text="제발 그만 버리세요.. 결국 유기견 안락사 시행하는 군산 유기동물 보호소"
+                app:layout_constraintTop_toBottomOf="@id/imgInfo3Img2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backstyle"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageButton
+                android:id="@+id/imgInfo3Img3"
+                android:layout_width="387dp"
+                android:layout_height="249dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtInfo3Txt2"
+                app:srcCompat="@drawable/im3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/txtInfo3Txt3"
+                android:layout_height="70dp"
+                android:layout_width="350dp"
+                android:text="다른 강아지 보는 앞에서 짐짝 던지듯…보호소 안락사 '논란'"
+                app:layout_constraintTop_toBottomOf="@id/imgInfo3Img3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backstyle"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageButton
+                android:id="@+id/imgInfo3Img4"
+                android:layout_width="387dp"
+                android:layout_height="249dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtInfo3Txt3"
+                app:srcCompat="@drawable/im4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/txtInfo3Txt4"
+                android:layout_height="70dp"
+                android:layout_width="350dp"
+                android:text="버려진 동물들, 코로나19 여파로 결국 안락사"
+                app:layout_constraintTop_toBottomOf="@id/imgInfo3Img4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backstyle"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageButton
+                android:id="@+id/imgInfo3Img5"
+                android:layout_width="387dp"
+                android:layout_height="249dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtInfo3Txt4"
+                app:srcCompat="@drawable/im5"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/txtInfo3Txt5"
+                android:layout_height="70dp"
+                android:layout_width="350dp"
+                android:text="저 안락사 되는건가요.. 휴가철 버려지는 반려동물들"
+                app:layout_constraintTop_toBottomOf="@id/imgInfo3Img5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backstyle"
+                android:layout_marginLeft="30dp"/>
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
